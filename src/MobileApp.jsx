@@ -6,6 +6,10 @@ import {
   SolarPanel,
   GraduationCap,
 } from "lucide-react";
+import logo from "../logo/SQUARCELL.png";
+import qs from "../logo/qskill_logo_trans.png";
+import infra from "../logo/inf-t.png";
+import sri from "../logo/sri.png";
 
 const MobileApp = () => {
   const [activeCard, setActiveCard] = useState(null);
@@ -18,7 +22,7 @@ const MobileApp = () => {
       color: "from-blue-600 to-purple-600",
       desc: "Bridging academics and industry through practical learning and real-world engineering.",
       icon: <GraduationCap className="w-5 h-5" />,
-      logo: "/logo/qskill_logo_trans.png",
+      logo: qs,
       link: "https://www.qskill.in/",
       heroTitle: (
         <>
@@ -34,7 +38,7 @@ const MobileApp = () => {
       color: "from-orange-500 to-amber-600",
       desc: "Scalable engineering solutions driving modern development and sustainable growth.",
       icon: <SolarPanel className="w-5 h-5" />,
-      logo: "/logo/inf-t.png",
+      logo: infra,
       link: "https://infra.squarcell.com/",
       heroTitle: (
         <>
@@ -50,7 +54,7 @@ const MobileApp = () => {
       color: "from-cyan-400 to-teal-500",
       desc: "Reliable global outsourcing and operations management for scalable business success.",
       icon: <VectorSquare className="w-5 h-5" />,
-      logo: "/logo/sri.png",
+      logo: sri,
       link: "https://www.srindia.co/",
       heroTitle: (
         <>
@@ -79,7 +83,7 @@ const MobileApp = () => {
       <nav className="fixed top-0 left-0 w-full z-50 px-4 py-4 backdrop-blur-xl border-b border-white/5 bg-black/20">
         <div className="flex items-center">
           <img
-            src="/logo/SQUARCELL.png"
+            src={logo}
             alt="Squarcell"
             className="w-40 object-contain"
             draggable="false"

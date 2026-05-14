@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, VectorSquare, SolarPanel, GraduationCap } from 'lucide-react';
+import { ArrowRight, VectorSquare, SolarPanel, GraduationCap, ImageOff } from 'lucide-react';
+import logo from "../logo/SQUARCELL.png";
+import qs from "../logo/qskill_logo_trans.png";
+import infra from "../logo/inf-t.png";
+import sri from "../logo/sri.png";
 
 const SquarcellLanding = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -24,7 +28,7 @@ const SquarcellLanding = () => {
     glow: 'rgba(147, 51, 234, 0.3)',
     desc: 'Bridging academics and industry through practical learning and real-world engineering.',
     icon: <GraduationCap className="w-6 h-6" />,
-    logo: "/logo/qskill_logo_trans.png", // Add your logo path here
+    logo: qs, // Add your logo path here
     logoSize: "w-18 h-18 sm:w-20 sm:h-20 lg:w-24 lg:h-24",
     link: "https://www.qskill.in/",
     heroTitle: <>Empowering the <span className="text-purple-500">next-gen</span> workforce.</>
@@ -37,7 +41,7 @@ const SquarcellLanding = () => {
     glow: 'rgba(245, 158, 11, 0.3)',
     desc: 'Scalable engineering solutions driving modern development and sustainable growth.',
     icon: <SolarPanel className="w-6 h-6" />,
-    logo: "/logo/inf-t.png",
+    logo: infra,
     logoSize: "w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20",
     link: "https://infra.squarcell.com/",
     heroTitle: <>Building the <span className="text-orange-500">foundation</span> of tomorrow.</>
@@ -50,7 +54,7 @@ const SquarcellLanding = () => {
     glow: 'rgba(6, 182, 212, 0.3)',
     desc: 'Reliable global outsourcing and operations management for scalable business success.',
     icon: <VectorSquare className="w-6 h-6" />,
-    logo: "/logo/sri.png",
+    logo: sri,
     logoSize: "w-28 h-28 sm:w-30 sm:h-30 lg:w-34 lg:h-34 bottom-5",
     link: "https://www.srindia.co/",
     // heroTitle: <>Global <span className="text-cyan-400">excellence</span> in every operation.</>
@@ -80,7 +84,7 @@ const SquarcellLanding = () => {
   <div className="w-14 h-14 lg:w-16 lg:h-16 flex items-center justify-center">
     
     <img 
-  src="/logo/SQUARCELL.png"
+  src={logo}
   alt="Squarcell"
   className="absolute object-contain scale-[0.55] sm:scale-[0.28] lg:scale-[0.3] left-[-65px] sm:left-[-65px] lg:left-[-350px] will-change-transform"
   draggable="false"
