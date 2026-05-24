@@ -16,53 +16,47 @@ const MobileApp = () => {
 
   const ventures = [
     {
-      id: "SQU",
-      name: "QSkill",
-      label: "Education Tech",
-      color: "from-blue-600 to-purple-600",
-      desc: "Bridging academics and industry through practical learning and real-world engineering.",
-      icon: <GraduationCap className="w-5 h-5" />,
-      logo: qs,
-      link: "https://www.qskill.in/",
-      heroTitle: (
-        <>
-          Empowering the{" "}
-          <span className="text-purple-500">next-gen</span> workforce.
-        </>
-      ),
-    },
-    {
-      id: "ARC",
-      name: "Squarcell Infra",
-      label: "Infrastructure",
-      color: "from-orange-500 to-amber-600",
-      desc: "Scalable engineering solutions driving modern development and sustainable growth.",
-      icon: <SolarPanel className="w-5 h-5" />,
-      logo: infra,
-      link: "https://infra.squarcell.com/",
-      heroTitle: (
-        <>
-          Building the{" "}
-          <span className="text-orange-500">foundation</span> of tomorrow.
-        </>
-      ),
-    },
-    {
-      id: "ELL",
-      name: "Squarcell Resource India",
-      label: "Outsourcing",
-      color: "from-cyan-400 to-teal-500",
-      desc: "Reliable global outsourcing and operations management for scalable business success.",
-      icon: <VectorSquare className="w-5 h-5" />,
+      id: 'SQU',
+      name: 'Squarcell Resource India',
+      label: 'Human Resource',
+      color: 'from-cyan-400 to-teal-500',
+      glow: 'rgba(6, 182, 212, 0.3)',
+      desc: 'Reliable global outsourcing and operations management for scalable business success.',
+      icon: <VectorSquare className="w-6 h-6" />,
       logo: sri,
+      logoSize: "w-28 h-28 sm:w-30 sm:h-30 lg:w-34 lg:h-34 bottom-5",
       link: "https://www.srindia.co/",
-      heroTitle: (
-        <>
-          Empowering the{" "}
-          <span className="text-cyan-400">next-gen</span> workforce.
-        </>
-      ),
+      // heroTitle: <>Global <span className="text-cyan-400">excellence</span> in every operation.</>
+      heroTitle: <>Empowering the <span className="text-cyan-400">next-gen</span> workforce.</>
     },
+  
+    {
+      id: 'ARC',
+      name: 'Squarcell Infra',
+      label: 'Infrastructure',
+      color: 'from-orange-500 to-amber-600',
+      glow: 'rgba(245, 158, 11, 0.3)',
+      desc: 'Scalable engineering solutions driving modern development and sustainable growth.',
+      icon: <SolarPanel className="w-6 h-6" />,
+      logo: infra,
+      logoSize: "w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20",
+      link: "https://infra.squarcell.com/",
+      heroTitle: <>Building the <span className="text-orange-500">foundation</span> of tomorrow.</>
+    },
+  
+    {
+      id: 'ELL',
+      name: 'QSkill',
+      label: 'Education Tech', // Updated
+      color: 'from-blue-600 to-purple-600',
+      glow: 'rgba(147, 51, 234, 0.3)',
+      desc: 'Bridging academics and industry through practical learning and real-world engineering.',
+      icon: <GraduationCap className="w-6 h-6" />,
+      logo: qs, // Add your logo path here
+      logoSize: "w-18 h-18 sm:w-20 sm:h-20 lg:w-24 lg:h-24",
+      link: "https://www.qskill.in/",
+      heroTitle: <>Transforming <span className="text-purple-500">Learners</span> into Professionals</>
+    }
   ];
 
   return (
@@ -120,9 +114,9 @@ const MobileApp = () => {
                   ? ventures.find((v) => v.id === activeCard).heroTitle
                   : (
                     <>
-                      Creating innovation across{" "}
+                      Creating possibilities for a{" "}
                       <span className="text-gray-500">
-                        education & infra.
+                        smater tomorrow
                       </span>
                     </>
                   )}
