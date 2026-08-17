@@ -30,7 +30,7 @@ const SquarcellLanding = () => {
     icon: <VectorSquare className="w-6 h-6" />,
     logo: sri,
     logoSize: "w-28 h-28 sm:w-30 sm:h-30 lg:w-34 lg:h-34 bottom-5",
-    link: "https://www.srindia.co/",
+    link: "https://resource.squarcell.com/",
     // heroTitle: <>Global <span className="text-cyan-400">excellence</span> in every operation.</>
     heroTitle: <>Empowering the <span className="text-cyan-400">next-gen</span> workforce.</>
   },
